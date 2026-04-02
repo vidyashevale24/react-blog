@@ -12,8 +12,8 @@ function App() {
   return (
     <>
      <h1>Counter Val:{counter}</h1>
-	 <User />
-	 <button onClick={()=>setCounter(counter+1)}>Increase counter value</button>
+	 <User  />
+	 <button onClick={()=>setCounter(counter+1)}>Increase Counter value</button>
     </>
   )
 }
