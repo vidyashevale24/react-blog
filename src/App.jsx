@@ -2,20 +2,30 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import User from './User'
 import './App.css'
-
+import ToDo from './ToDo'
+import Counter from './Counter'
 
 function App() {
-  const [counter, setCounter] = useState(0)
-
+//   function callFun(){
+// 	alert("Function called1");
+// }
   return (
     <>
-     <h1>Counter Val:{counter}</h1>
-	 <User  />
-	 <button onClick={()=>setCounter(counter+1)}>Increase Counter value</button>
+	<ul>
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+	</ul>
+     
+	<button onClick={callFun}>Click Me</button>
+	<ToDo />
+	<Counter />
     </>
   )
+}
+const callFun=()=>{
+	alert("Function called1");
 }
 
 export default App
