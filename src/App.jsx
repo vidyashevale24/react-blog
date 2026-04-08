@@ -5,26 +5,33 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import ToDo from './ToDo'
 import Counter from './Counter'
+import Toggle from './Toggle'
+
 
 function App() {
-//   function callFun(){
-// 	alert("Function called1");
-// }
-  return (
-    <>
-	<ul>
-		<li>a</li>
-		<li>b</li>
-		<li>c</li>
-	</ul>
-     
-	<button onClick={callFun}>Click Me</button>
-	<ToDo />
-	<Counter />
-    </>
-  )
+	/* function callFun(){
+		alert("Function called1");
+	} */
+	const [display,setDisplay] =useState(true);
+
+	const toggle = () => {
+		setDisplay(!display);
+	}
+	
+	return (
+		<>
+
+
+			{/* <button onClick={callFun}>CLick me </button> */}
+			{<button onClick={toggle}>Toggle </button>}
+			{display?<Toggle />:''}
+			<ToDo />
+			<Counter />
+			
+		</>
+	)
 }
-const callFun=()=>{
+const callFun = () => {
 	alert("Function called1");
 }
 

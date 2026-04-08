@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Counter = () => {
 
-    const [count, setCount] = useState(0);
+    const [count, setCount]  = useState(0);
     const [Rcount, revCount] = useState(10);
     return (<>
         <div>
@@ -10,7 +10,6 @@ const Counter = () => {
             <h1>R Counter Value is: {Rcount}</h1>
             <button onClick={() => setCount(count + 1)}>Click me to Increase</button>
             <button onClick={() => revCount(Rcount - 1)}>Click me to Decrease</button>
-
         </div>
     </>
     )
