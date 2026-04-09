@@ -6,6 +6,7 @@ import './App.css'
 import ToDo from './ToDo'
 import Counter from './Counter'
 import Toggle from './Toggle'
+import User from './User'
 
 
 function App() {
@@ -18,10 +19,16 @@ function App() {
 		setDisplay(!display);
 	}
 	
+	const userDetails = {
+		'name': 'John Doe',
+		'email': 'john.doe@example.com',
+		'age': 30
+	}
+
 	return (
 		<>
 
-
+			<User userDetail={userDetails} />
 			{/* <button onClick={callFun}>CLick me </button> */}
 			{<button onClick={toggle}>Toggle </button>}
 			{display?<Toggle />:''}
