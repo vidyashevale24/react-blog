@@ -1,37 +1,18 @@
 import { use, useState } from 'react'
 import './App.css'
+import Counter from './Counter';
 
 function App() {
-	const [gender, setGender] = useState('male');
-	const userdata = [
-		{ id: 1, name: 'John', gender: 'male' },
-		{ id: 2, name: 'Jane', gender: 'female' },
-		{ id: 3, name: 'Doe', gender: 'male' }
-	];
+	const [counter, setCounter] = useState(0);
+	const [data, setData] = useState(0);
+	
 	return (
 		<div >
-			<h2>----------------------------------MAP Function/LOOP---------------------------------</h2>
-
-			<table border="1">
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Name</th>
-						<th>Gender</th>
-					</tr>
-				</thead>
-				<tbody>
-					{
-						userdata.map((user) => (
-							<tr key={user.id}>
-								<td>{user.id}</td>
-								<td>{user.name}</td>
-								<td>{user.gender}</td>
-							</tr>
-						))
-					}
-				</tbody>
-			</table>
+			<h2>----------------------------------Use Effect---------------------------------</h2>
+			<button onClick={()=>setCounter(counter+1)}>Counter {counter}</button>
+			<button onClick={()=>setData(data+1)}>Data {data}</button>
+			<Counter count={counter} data={data} />
+			
 		</div>
 	)
 }
