@@ -1,18 +1,83 @@
-import { use, useState } from 'react'
-import './App.css'
-import Counter from './Counter';
+
+// import './App.css'
+
 
 function App() {
-	const [counter, setCounter] = useState(0);
-	const [data, setData] = useState(0);
-	
+
+	const cardStyle = {
+		width: '200px',
+		backgroundColor: "#d3d3d34f",
+		padding: "10px",
+		margin: "5px",
+		boxShadow: "1px 1px 1px 0px #302e2e4f"
+	}
 	return (
 		<div >
-			<h2>----------------------------------Use Effect---------------------------------</h2>
-			<button onClick={()=>setCounter(counter+1)}>Counter {counter}</button>
-			<button onClick={()=>setData(data+1)}>Data {data}</button>
-			<Counter count={counter} data={data} />
-			
+			<h1 style={{ color: 'blue', fontFamily: 'Arial' }}>
+				Inline style</h1>
+			<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' 	}}>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+				<div style={cardStyle}>
+					<img src="https://w3schools.com/howto/img_avatar.png" width="200px" alt="tree" />
+					<h2>Vidya Sagar</h2>
+					<p>Software Engineer</p>
+				</div>
+			</div>
+
 		</div>
 	)
 }
